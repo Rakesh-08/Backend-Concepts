@@ -1,17 +1,17 @@
-/*
-
-console.log(new Date())
-console.log( Date.now());
-console.log(new Date().getTime());
 
 
+// console.log(new Date())
+// console.log( Date.now());
+// console.log(new Date().getTime());
 
 
-let fs= require('fs');   
 
-fs.readFile('./index.text','utf-8',function(error, data){
-    console.log(data)
-})
+
+// let fs= require('fs');   
+
+// fs.readFile('./index.text','utf-8',function(error, data){
+//     console.log(data)
+// })
 
 let fs= require('fs')
 fs.open('index.text','a',function(error,fd){ //fd -- file descriptor
@@ -25,7 +25,7 @@ fs.open('index.text','a',function(error,fd){ //fd -- file descriptor
     })
    
 })
-
+/*
 let car={name: 'maruti',
           price : 97000}
 

@@ -1,6 +1,6 @@
-let htttp = require("http")
+let http = require("http")
 
-let server = htttp.createServer((req, res) => {
+let server = http.createServer((req, res) => {
   let user = {
     name: "Rakesh",
     age: 23,

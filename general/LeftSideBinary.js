@@ -57,8 +57,9 @@ else{ if(current.right== null){
 let b= new binaryTree()
 b.AddNode(50)        // left side Binarry tree
 b.AddNode(40)
+b.AddNode(60)
 b.AddNode(30)
-b.AddNode(20)
-b.AddNode(10)
-b.AddNode(5)
+b.AddNode(45)
+b.AddNode(55)
+b.AddNode(65)
 console.log(b)

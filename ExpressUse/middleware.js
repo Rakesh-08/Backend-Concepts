@@ -23,13 +23,13 @@ expressApp.get("/user", (req, res) => {
 });
 
 
-let finalPath = path.join(__dirname , '../general' +  '/h.html)')
+let finalPath = path.join(__dirname , '../general' +  '/WebPage.html)')
  console.log(finalPath)
 
 
 expressApp.get("/file", (req, res) => {
   
-  res.sendFile( finalPath);
+  res.sendFile(finalPath);
   res.end();
 });
 
