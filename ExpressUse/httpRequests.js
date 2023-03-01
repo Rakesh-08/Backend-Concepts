@@ -16,7 +16,7 @@ expressApp.use(bodyParser.json());
 expressApp.use(express.static("general"));
 
 expressApp.get("/file", (req, res) => {
-  res.sendFile("h.html").status(200);
+  res.sendFile("WebPage.html").status(200);
   res.end();
 });
 

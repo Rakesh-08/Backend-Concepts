@@ -9,7 +9,7 @@ use MyfirstDB :
     create table users (
         id bigint not null auto_increment,
         Email varchar(255) not null ,
-        Password varchar(255) not nutll,
+        Password varchar(255) not null,
         CreatedAt datetime default now(),
 
         primary key (id)
@@ -47,6 +47,7 @@ insert into users(Email, Password) values
 
 -- delete from MyfirstDB.users where id=3
 -- drop keyword to delete column
+-- ALTER to change the structure of the table while update to change the data in the table
 -- select*from ----->>> * means all columns and you can also specify which columns to select by using column names (seperated by commas) instesd of *
 
 insert into MyfirstDB.products (productName,category,price) values
@@ -86,7 +87,7 @@ select max(price) from products;
 
 select*from  products
 where price in
-(select max(price) from products and category='Mobile phone')
+(select max(price) from products where category='Mobile phone')
 
 
 --------
