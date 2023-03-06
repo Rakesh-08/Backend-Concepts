@@ -60,15 +60,19 @@ async function getTableCategories() {
 
 
     let whereCond = await Categories.findAll({
-        where: {
-            [sequelize.Op.or]: {
-                id: 1,
-                id: 2
-            }
-        }
-    })
+      where: {
+        [sequelize.Op.and]: [
+          {
+            id: 1,
+          },
+          {
+            name:"Mobile phone",
+          },
+        ],
+      },
+    });
 
 
-    console.log(whereCond)
+    console.log(JSON.stringify(whereCond))
 }
 createTableCategories();
