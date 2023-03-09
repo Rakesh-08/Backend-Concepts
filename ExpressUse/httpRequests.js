@@ -17,7 +17,7 @@ expressApp.use(express.static("general"));
 
 expressApp.get("/file", (req, res) => {
   res.sendFile("WebPage.html").status(200);
-  res.end();
+  
 });
 
 expressApp.post("/user", (req, res) => {
