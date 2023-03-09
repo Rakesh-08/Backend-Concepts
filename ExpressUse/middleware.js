@@ -22,15 +22,16 @@ expressApp.get("/user", (req, res) => {
   res.end();
 });
 
-
-let finalPath = path.join(__dirname , '../general' +  '/h.html)')
- console.log(finalPath)
+// expressApp.use(express.static('/general'))
 
 
 expressApp.get("/file", (req, res) => {
+  res.write('hello world')
   
-  res.sendFile( finalPath);
-  res.end();
+  // res.sendFile(  path.join(__dirname, "../general/WebPage.html"));
+  // res.sendFile("/WebPage.html")
+  res.end()
+ 
 });
 
 

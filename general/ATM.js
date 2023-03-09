@@ -44,3 +44,10 @@ loginTime(){
     return;
   }
 }
+
+// let Rakesh = new ATM(1234, 50000);
+
+// console.log(Rakesh.checkBalance(1234));
+// console.log(Rakesh.WithdrawCash(1234,3000))
+
+// console.log(Rakesh.checkBalance(1234))
